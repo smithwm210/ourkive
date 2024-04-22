@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-webapp-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Add Form</title>
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="App.css">
+</head>
+<body>
+    <button class="back" onclick="location.href='App.js';">Back</button>
+    <div class="info">
+        <form method="post" id="add">
+            <label>Category:</label>
+            <div class="error" id="name-error"> Category is a required field.
+                <input type="radio" id="category1" name="movie" value="movie" />
+                <label for="category1">Movie</label>
+
+                <input type="radio" id="category2" name="tv" value="tv" />
+                <label for="category2">TV</label>
+
+                <input type="radio" id="category3" name="game" value="game" />
+                <label for="category3">Game</label>
+
+                <input type="radio" id="category4" name="book" value="book" />
+                <label for="category1">Book</label>
+
+                <input type="radio" id="category5" name="music" value="music" />
+                <label for="category2">Music</label>
+
+                <input type="radio" id="category6" name="other" value="other" />
+                <label for="category3">Other</label>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="stay_standalone.js"></script>
+</body>
+</html>
